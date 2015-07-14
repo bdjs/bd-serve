@@ -3,9 +3,9 @@
 var serve = require('bd-static');
 var path = require('path');
 
-module.exports = function (apps, app) {
-  var keys = Object.keys(apps);
+module.exports = function (app) {
+  var keys = Object.keys(app.apps);
   keys.map(function (key) {
-    app.use(serve(path.join(apps[key], 'public'), key))
+    app.use(serve(path.join(app.apps[key], 'public'), key))
   })
 };
