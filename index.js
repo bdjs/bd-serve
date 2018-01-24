@@ -1,25 +1,12 @@
-'use strict';
+'use strict'
 
-var path = require('path');
-var serve = require('bd-static');
-var views = require('bd-views');
-var assign = require('object-assign');
+const path = require('path')
+const serve = require('bd-static')
 
-module.exports = function(app) {
-  var apps = Object.keys(app.apps);
-  apps.map(function(key) {
-    app.use(serve(path.join(app.apps[key], 'public'), key));
-    if (!app.configs.views) {
-      return;
-    }
-    var config = app.configs.views[key];
-    if (!config) {
-      return;
-    }
-    config = assign(config, {
-      key: key,
-      path: path.join(app.apps[key], 'views')
-    });
-    app.use(views(config));
+module.exports = function (app) {
+  console.log('build serve')
+  let apps = Object.keys(app.apps)
+  apps.forEach(key => {
+    app.use(serve(path.join(app.apps[key], 'public'), key))
   })
-};
+}
