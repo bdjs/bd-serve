@@ -1,6 +1,6 @@
 {
   "name": "bd-serve",
-  "version": "0.2.1",
+  "version": "2.0.0",
   "description": "bd serve helper",
   "main": "index.js",
   "scripts": {
@@ -15,15 +15,17 @@
     "serve",
     "bd-serve"
   ],
-  "author": "mdemo",
+  "author": "blued-fe",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bdjs/bd-serve/issues"
   },
   "homepage": "https://github.com/bdjs/bd-serve#readme",
+  "engines": {
+    "node": ">= 8.0.0"
+  },
   "dependencies": {
-    "bd-static": "^0.1.1",
-    "object-assign": "^3.0.0"
+    "bd-dist": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^4.15.0",
