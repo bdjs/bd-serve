@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/bdjs/bd-serve#readme",
   "dependencies": {
-    "bd-static": "^0.1.1",
+    "bd-static-new": "^0.2.1",
     "bd-views": "^0.2.0",
     "object-assign": "^3.0.0"
   }

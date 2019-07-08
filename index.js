@@ -1,7 +1,7 @@
 'use strict';
 
 var path = require('path');
-var serve = require('bd-static');
+var serve = require('bd-static-new');
 var views = require('bd-views');
 var assign = require('object-assign');
 
