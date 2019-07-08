@@ -1,5 +1,5 @@
 {
-  "name": "bd-serve",
+  "name": "bd-server",
   "version": "0.2.2",
   "description": "bd serve helper",
   "main": "index.js",
